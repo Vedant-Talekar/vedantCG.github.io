@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;                                       /* This section is meant for the background of the website */
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #9c27b0,#8ecdff);
+}
+nav{
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.information{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);  /* Vertically centered */ 
+}
+#circle{            /* Dont forget to use hashtags when dealing with id class's */ 
+    width: 1000px;
+    height: 1000px;
+    position: absolute;                 
+    top: 0;
+    left: 0;
+    border-radius: 50%;          /* This section is meant for the cricle characteristics itself */    
+    /* background: rgb(226, 218, 218); */
+    transform: rotate(0deg); /* This will now store 0 degrees in the rotate value variable in the html class*/ 
+    transition: 1s; /* This brings the effect of the entire content in the circle to be rotating on instantly flipping*/
+}
+.feature img{
+    width: 100px;
+}
+.feature{
+    position: absolute;
+    display: flex;
+    color: #fff;
+}
+.feature div{
+    margin-left: 30px;
+}
+.feature div p{
+    margin-top: 10px;
+}
+.one{
+    top: 450px;     /* Setting the position for each feature */ 
+    right: 50px;
+}
+.two{
+    top: 150px;
+    left: 350px;
+    transform: rotate(-90deg);
+}
+.three{
+    bottom: 450px;
+    left: 50px;
+    transform: rotate(-180deg);
+}
+.four{
+    bottom: 150px;
+    left: 350px;
+    transform: rotate(-270deg);
+}
+.myself{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%); /* Vertically centered */ 
+    z-index: 1;
+}
+.controls{
+    position: absolute;         /* Setting positions and characteristics */ 
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%); /* Vertically centered */ 
+    text-align: center;
+}
+.controls h3{
+    margin: 15px 0;
+    color: #fff;
+}
+#upButton{
+    width: 15px;
+    cursor: pointer;    /* so when you hover it becomes like something you could click on */ 
+}
+#downButton{
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg); /* Rotate the arrow image by a 180 degrees */ 
+}
+ .coverFeatures{
+    width: 0;
+    height: 0;
+    border-top: 500px solid #fff;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid #fff;
+    border-left: 500px solid #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

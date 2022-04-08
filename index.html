@@ -1,0 +1,90 @@
+
+<html>
+    <head>
+        <title>Website Design using html and css</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class ="main">
+            <nav>
+                <div class ="logo">
+                    <img src="images/download.png">
+                </div>
+                <div class ="nav-links">
+                    <ul>                                                <!--navigating links created here-->
+                        <li><a href="#">Home</a></li>           <!--These are the anchor tags for the variables-->
+                        <li><a href="#">About me</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Education</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+           <div class="information"> 
+                <div class="coverFeatures"></div>
+                <img src="images/me.png" class="myself">
+                <div id ="circle">
+                    <div class="feature one">
+                        <img src="images/camera.png">
+                        <div>
+                            <h1>Welcome</h1>
+                            <p>To my Website</p>
+                        </div>
+                    </div>
+                    <div class="feature two">
+                        <img src="images/snapchat.jpg">
+                        <div>
+                            <h1>Snapchat</h1>
+                            <p>Username: stewies5ith</p>
+                        </div>
+                    </div>
+                    <div class="feature three">
+                        <img src="images/wechat.jpg">
+                        <div>
+                            <h1>WeChat</h1>
+                            <p>Username: Vedant-Talekar</p>
+                        </div>
+                    </div>
+                    <div class="feature four">
+                        <img src="images/instagram.jpg">
+                        <div>
+                            <h1>Instagram</h1>
+                            <p>Username: VVTALESTAKES</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="controls">
+                <img src="images/arrow.png" id="upButton">
+                <h3>Add me</h3>
+                <img src="images/arrow.png" id="downButton">
+            </div>
+
+        </div>
+        <script>                //javascript section
+            var circle = document.getElementById("circle");             //declaring and obtaining following variables
+            var upButton = document.getElementById("upButton");
+            var downButton = document.getElementById("downButton");
+
+            var rotateValue = circle.style.transform;
+            var rotateSum;
+
+            upButton.onclick = function(){
+                rotateSum = rotateValue + "rotate(-90deg)";            //it will rotate the content anticlockwise 
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;            //update the existing rotate value
+            }
+
+            downButton.onclick = function(){
+                rotateSum = rotateValue + "rotate(+90deg)";            //it will rotate the content clockwise 
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;            //update the existing rotate value
+            }
+        </script>
+
+
+
+    </body>
+</html>
